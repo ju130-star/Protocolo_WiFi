@@ -1,0 +1,13 @@
+$cor-primaria: #002D62;
+$cor-fundo: #f4f4f4;
+$cor-texto: #ffffff;
+
+footer {
+  background-color: $cor-primaria;
+  color: $cor-texto;
+  text-align: center;
+  padding: 1rem 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
