@@ -1,7 +1,14 @@
-$cor-primaria: #002D62;
+$cor-primaria: #701E8C;
 $cor-fundo: #f4f4f4;
 $cor-texto: #ffffff;
 
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -15,6 +22,7 @@ $cor-texto: #ffffff;
     text-decoration: none;
     font-weight: bold;
     margin-left: 1rem;
+    font-family: 'Exo', sans-serif ;
 
     &:hover {
       text-decoration: underline;
