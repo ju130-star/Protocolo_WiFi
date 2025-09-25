@@ -1,0 +1,28 @@
+$cor-primaria: #002D62;
+$cor-fundo: #f4f4f4;
+$cor-texto: #ffffff;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: $cor-primaria;
+  color: $cor-texto;
+
+  a {
+    color: $cor-texto;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 1rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .navItens {
+    display: flex;
+    align-items: center;
+  }
+}
