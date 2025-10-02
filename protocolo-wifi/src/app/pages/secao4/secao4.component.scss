@@ -1,41 +1,83 @@
-// =================== CASOS DE SUCESSO ==================
 .casos-sucesso {
-  background-color: #f9f9f9;
-  color: #333;
-  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #0e0e2c, #1a0033);  min-height: 100vh; // cobre a altura da tela
+  width: 100%; // largura total, sem overflow
+  padding: 3rem 2rem; // padding horizontal menor para evitar overflow
+  border-radius: 0;
+  color: #ddd;
+  font-family: 'Cabin', sans-serif;
+  box-sizing: border-box; // importante para conter padding/border
 
   h2 {
+    font-family: 'Exo', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
     text-align: center;
-    font-size: 2.2rem;
-    margin-bottom: 2rem;
-    color: #2c3e50;
+    color: #cecaff;
+    margin-bottom: 3rem;
+    border-bottom: 2px solid #5a1a66;
+    padding-bottom: 0.5rem;
   }
 
   .caso {
     display: flex;
-    flex-wrap: wrap;
+    gap: 2rem;
     margin-bottom: 3rem;
-    align-items: center;
-    gap: 1.5rem;
+    align-items: flex-start;
+    max-width: 1200px; // limita a largura máxima para evitar estourar
+    margin-left: auto;
+    margin-right: auto;
 
     img {
-      width: 100%;
-      max-width: 400px;
+      width: 280px;
+      height: 180px;
       border-radius: 10px;
+      object-fit: cover;
+      flex-shrink: 0;
+      box-shadow: 0 0 8px rgba(211, 108, 166, 0.3);
     }
 
     .texto {
       flex: 1;
-      min-width: 250px;
 
       h3 {
+        font-family: 'Exo', sans-serif;
+        font-weight: 600;
         font-size: 1.5rem;
-        color: #2c3e50;
+        color: #cecaff;
+        margin-bottom: 0.5rem;
       }
 
       p {
-        font-size: 1rem;
+        font-size: 1.1rem;
         line-height: 1.5;
+        color: #ccc;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 3rem 1.5rem;
+
+    .caso {
+      flex-direction: column;
+      gap: 1.5rem;
+      max-width: 100%;
+
+      img {
+        width: 100%;
+        height: auto;
+        max-height: 280px;
+        margin-bottom: 1rem;
+      }
+
+      .texto {
+        h3 {
+          font-size: 1.3rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
       }
     }
   }

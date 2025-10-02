@@ -1,34 +1,74 @@
-// =================== ALERTA DE INCOMPATIBILIDADE ==================
 .alerta-incompatibilidade {
-  background-color: #f9f9f9;
-  color: #333;
-  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #0e0e2c, #1a0033);
+    min-height: 100vh; // cobre a altura da tela  min-height: 100vh;
+  width: 100%;
+  padding: 3rem 2rem;
+  color: #ddd;
+  font-family: 'Cabin', sans-serif;
+  box-sizing: border-box;
 
   h2 {
+    font-family: 'Exo', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
     text-align: center;
-    font-size: 2.2rem;
-    margin-bottom: 2rem;
-    color: #2c3e50;
+    color: #cecaff;
+    margin-bottom: 3rem;
+    border-bottom: 2px solid #5a1a66;
+    padding-bottom: 0.5rem;
   }
 
   .cenario {
-    margin-bottom: 3rem;
-    background: #fff;
-    padding: 1.5rem 2rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(44, 62, 80, 0.1);
+    display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
 
-    .texto {
-      h3 {
-        font-size: 1.5rem;
-        color: #2c3e50;
-        margin-bottom: 0.75rem;
-      }
+      .texto {
+        flex: 1 1 400px;
+        font-family: 'Cabin', sans-serif;
 
       p {
-        font-size: 1rem;
-        line-height: 1.5;
-        margin-bottom: 1rem;
+         background: rgba(255, 255, 255, 0.05);
+         padding: 1.5rem;
+         border-left: 4px solid #3498db;
+         border-radius: 10px;
+         margin-bottom: 1.5rem;
+         font-size: 1.1rem;
+         line-height: 1.7;
+         color: #f1f1f1;
+         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+         backdrop-filter: blur(4px);
+         transition: border-color 0.3s ease;
+
+         &:last-of-type {
+         border-left-color: #8e44ad;
+         }
+
+         &:hover {
+           border-left-color: #ff4f81;
+         }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 3rem 1.5rem;
+
+    .cenario {
+      padding: 1.5rem 1.8rem;
+
+      .texto {
+        h3 {
+          font-size: 1.3rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
       }
     }
   }
