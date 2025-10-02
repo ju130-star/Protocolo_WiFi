@@ -8,7 +8,7 @@ describe('Secao3Component', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [Secao3Component]
+      declarations: [Secao3Component],
     });
     fixture = TestBed.createComponent(Secao3Component);
     component = fixture.componentInstance;

@@ -1,0 +1,35 @@
+// =================== ALERTA DE INCOMPATIBILIDADE ==================
+.alerta-incompatibilidade {
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 4rem 2rem;
+
+  h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+  }
+
+  .cenario {
+    margin-bottom: 3rem;
+    background: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(44, 62, 80, 0.1);
+
+    .texto {
+      h3 {
+        font-size: 1.5rem;
+        color: #2c3e50;
+        margin-bottom: 0.75rem;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

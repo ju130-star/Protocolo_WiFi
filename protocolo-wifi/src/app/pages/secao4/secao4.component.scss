@@ -1,0 +1,42 @@
+// =================== CASOS DE SUCESSO ==================
+.casos-sucesso {
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 4rem 2rem;
+
+  h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+  }
+
+  .caso {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    align-items: center;
+    gap: 1.5rem;
+
+    img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+    }
+
+    .texto {
+      flex: 1;
+      min-width: 250px;
+
+      h3 {
+        font-size: 1.5rem;
+        color: #2c3e50;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+    }
+  }
+}
