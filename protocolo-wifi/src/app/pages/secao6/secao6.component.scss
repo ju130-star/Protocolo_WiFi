@@ -1,44 +1,52 @@
-// =================== VEJA EM AÇÃO ==================
 .veja-em-acao {
-  background-color: #f9f9f9;
-  color: #333;
+  background: linear-gradient(135deg, #0e0e2c, #1a0033); // fundo escuro elegante  color: #f0e6ff;
   padding: 4rem 2rem;
+  font-family: 'Cabin', sans-serif;
+  width: 100vw;
+  box-sizing: border-box;
 
   h2 {
+    font-family: 'Exo', sans-serif;
     text-align: center;
-    font-size: 2.2rem;
-    margin-bottom: 2rem;
-    color: #2c3e50;
+    font-size: 2.4rem;
+    margin-bottom: 2.5rem;
+    color: #e3d7ff;
   }
 
   .video-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 
     iframe {
       width: 100%;
-      max-width: 700px;
-      height: 400px;
-      border-radius: 10px;
+      max-width: 900px;
+      height: 480px;
+      border-radius: 12px;
       border: none;
+      box-shadow: 0 0 20px rgba(106, 13, 173, 0.7);
     }
   }
 
   .descricao-video {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     text-align: center;
 
     h3 {
-      font-size: 1.5rem;
-      color: #2c3e50;
+      font-family: 'Exo', sans-serif;
+      font-size: 1.8rem;
+      color: #d9caff;
       margin-bottom: 1rem;
     }
 
     p {
-      font-size: 1rem;
-      line-height: 1.6;
+      font-family: 'Cabin', sans-serif;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #e6dbff;
+      max-width: 850px;
+      margin: 0 auto;
     }
   }
 }

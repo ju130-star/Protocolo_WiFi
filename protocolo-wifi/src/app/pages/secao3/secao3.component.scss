@@ -1,63 +1,119 @@
-// =================== FICHA TÉCNICA ==================
 .ficha-tecnica {
-  background-color: #f9f9f9;
-  color: #333;
+  background: linear-gradient(135deg, #0e0e2c, #1a0033);
   padding: 4rem 2rem;
+  color: #fff;
 
   h2 {
-    text-align: center;
+    font-family: 'Exo', sans-serif;
     font-size: 2.2rem;
-    margin-bottom: 2.5rem;
-    color: #2c3e50;
+    text-align: center;
+    color: #cecaff;
+    margin-bottom: 3rem;
+    font-weight: 700;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      margin: 1rem auto 0;
+      background: linear-gradient(to right, #3498db, #8e44ad);
+      border-radius: 2px;
+    }
   }
 
   .tabela-completa {
-    max-width: 1200px; // mais largura para a tabela
-    margin: 0 auto;
+    max-width: 100%;
     overflow-x: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(44, 62, 80, 0.1);
 
     table {
       width: 100%;
-      border-collapse: separate;
-      border-spacing: 0;
-      font-size: 1rem;
-      line-height: 1.6;
-      min-width: 900px; // garante largura mínima para melhor visualização
+      min-width: 1100px; // aumentei um pouco mais pra ter espaço extra
+      border-collapse: collapse;
+      font-family: 'Cabin', sans-serif;
+      border-radius: 12px;
+      overflow: hidden;
+      background-color: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(5px);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 
       thead {
-        background-color: #2c3e50;
-        color: #fff;
+        background: linear-gradient(to right, #8e44ad, #3498db);
 
         th {
-          padding: 1rem 1.2rem;
+          padding: 1.2rem 1rem;
+          font-weight: 600;
+          color: #fff;
           text-align: left;
-          font-weight: 700;
-          border-bottom: 3px solid #1a2733;
+          font-size: 1rem;
           white-space: nowrap;
         }
       }
 
       tbody {
         tr {
-          background-color: #fff;
-          border-bottom: 1px solid #ddd;
-          transition: background-color 0.3s ease;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+          transition: background 0.3s;
 
           &:hover {
-            background-color: #e9f0f7;
+            background-color: rgba(255, 255, 255, 0.04);
+          }
+
+          td {
+            padding: 1.2rem 1rem;
+            font-size: 0.95rem;
+            color: #e0e0e0;
+            vertical-align: top;
+            line-height: 1.6;
+            word-break: break-word;
+
+            &:first-child {
+              font-weight: bold;
+              color: #ff4f81;
+              text-align: center;
+              width: 60px; // maior para o número
+              min-width: 60px;
+            }
+
+            &:nth-child(2),
+            // Padrão
+            &:nth-child(3),
+            // Ano
+            &:nth-child(4) {
+              // Frequência
+              width: 90px; // mais estreitas
+              min-width: 90px;
+            }
+
+            &:nth-child(6) {
+              // Características
+              width: 450px; // maior para texto longo
+              min-width: 450px;
+            }
+
+            &:nth-child(5),
+            // Velocidade Máxima
+            &:nth-child(7) {
+              // Consumo de Energia
+              width: 130px;
+              min-width: 130px;
+            }
           }
         }
-
-        td {
-          padding: 1rem 1.2rem;
-          vertical-align: top;
-          border-bottom: 1px solid #eee;
-          color: #444;
-          word-break: break-word; // evita overflow de texto longo
-        }
       }
+    }
+
+    &::-webkit-scrollbar {
+      height: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #8e44ad;
+      border-radius: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
     }
   }
 }

@@ -1,41 +1,74 @@
-// =================== O QUE É ==================
 .o-que-e {
-  background-color: #f9f9f9;
-  color: #333;
+  background: linear-gradient(135deg, #0e0e2c, #1a0033); // fundo escuro elegante
   padding: 4rem 2rem;
+  color: #ffffff;
+  position: relative;
 
   h2 {
+    font-family: 'Exo', sans-serif;
+    font-size: 2.5rem;
     text-align: center;
-    font-size: 2.2rem;
-    margin-bottom: 2rem;
-    color: #2c3e50;
+    color: #cecaff; // rosa da paleta
+    margin-bottom: 3rem;
+    font-weight: 700;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(to right, #3498db, #8e44ad);
+      margin: 1rem auto 0;
+      border-radius: 2px;
+    }
   }
 
   .explicacao {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
     gap: 2rem;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
 
     .texto {
-      flex: 1;
-      min-width: 280px;
+      flex: 1 1 400px;
+      font-family: 'Cabin', sans-serif;
 
       p {
-        font-size: 1rem;
-        line-height: 1.5;
-        margin-bottom: 1rem;
+        background: rgba(255, 255, 255, 0.05);
+        padding: 1.5rem;
+        border-left: 4px solid #3498db;
+        border-radius: 10px;
+        margin-bottom: 1.5rem;
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: #f1f1f1;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(4px);
+        transition: border-color 0.3s ease;
+
+        &:last-of-type {
+          border-left-color: #8e44ad;
+        }
+
+        &:hover {
+          border-left-color: #ff4f81;
+        }
       }
     }
 
     img {
-      flex: 1;
-      max-width: 400px;
-      width: 100%;
-      border-radius: 10px;
-      object-fit: contain;
+      flex: 1 1 300px;
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
     }
   }
 }
